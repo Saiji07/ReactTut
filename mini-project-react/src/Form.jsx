@@ -9,8 +9,7 @@ let[city,setCity]=useState("");
 
 
 
-    const API_URL="http://api.openweathermap.org/data/2.5/weather";
-    const API_KEY="4d2d2401ac24c33b4863d47c90c73ac2";
+  
     let getdata=async(city)=>{
 let response=await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
 let ans=await response.json();
